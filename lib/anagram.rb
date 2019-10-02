@@ -8,6 +8,6 @@ class Anagram
   end 
   
   def match(arr)
-    arr.map { |str| word.split('').sort == str.split('').sort }
+    arr.collect { |str| word.split('').sort == str.split('').sort }
   end 
 end 
